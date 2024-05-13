@@ -1,0 +1,80 @@
+.midside {
+}
+
+.midside-pannel01 {
+  width: 100%;
+  overflow-x: hidden;
+  border: 1px solid rgb(211, 211, 211);
+  /* height: 7rem; */
+  border-radius: 6px;
+  background-color: white;
+}
+.midside-pannel02 {
+  border: 1px solid rgb(211, 211, 211);
+  height: auto;
+  border-radius: 6px;
+  background-color: white;
+}
+.midside-pannel02 img {
+  width: 100%;
+  border-radius: 6px;
+}
+.midside-pannel01 .mp01 {
+  overflow: hidden;
+  display: flex;
+}
+.midside-pannel01 .mp01 img {
+  margin: 1rem 1rem;
+  margin-top: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 9000px;
+}
+.midside-pannel01 .mp01 input {
+  height: 50px;
+  margin: auto;
+  width: 80%;
+  padding: 1rem;
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.mp02 ol {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0.4rem;
+}
+.mp02 ol li {
+  margin: auto;
+  cursor: pointer;
+  /* border: 1px solid rgb(235, 231, 231); */
+  padding: 1rem;
+}
+
+.mp02 ol li:hover {
+  background-color: rgb(235, 231, 231);
+}
+
+.midside-pannel02 {
+}
+.midside-pannel02 ol {
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+
+.midside-pannel02 ol li {
+  cursor: pointer;
+  margin: auto;
+  /* margin: 0.1rem; */
+  margin: 0.1rem 0.2rem;
+  margin-top: 1rem;
+}
+.midside-pannel02 ol li img {
+  margin: 0.2rem 0.2rem;
+  margin-top: 0rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 9000px;
+}
