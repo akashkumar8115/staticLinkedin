@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/leftside.css" />
+    <link rel="stylesheet" href="./css/midside.css" />
+    <link rel="stylesheet" href="./css/rightside.css" />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css"
+      rel="stylesheet"
+    />
+
+    <title>Linkedin</title>
+  </head>
+  <body>
+    <script src="./javascript.js"></script>
+
+    <nav>
+      <div class="leftnav">
+        <div id="logo">
+          <img id="logoimg" src="./favicon.png" alt="logo" />
+        </div>
+        <div id="leftnav-search">
+          <div>
+            <button id="gg-arrow-left-button" onclick="back()">
+              <i class="gg-arrow-left"></i>
+            </button>
+            &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+          </div>
+          <button class="search-button" onclick="search()" id="search-button">
+            <i class="gg-search"></i>
+          </button>
+          <input type="search" name="" id="search" placeholder="Search" />
+        </div>
+      </div>
+      <div class="midnav" id="midnav">
+        <ol>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"
+              ></path>
+            </svg>
+            <p class="navtitile">Home</p>
+          </li>
+
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M12 6.5a4.5 4.5 0 114.5 4.5A4.49 4.49 0 0112 6.5zm6 6.5h-3a3 3 0 00-3 3v6h9v-6a3 3 0 00-3-3zM6.5 6A3.5 3.5 0 1010 9.5 3.5 3.5 0 006.5 6zm1 9h-2A2.5 2.5 0 003 17.5V22h7v-4.5A2.5 2.5 0 007.5 15z"
+              ></path>
+            </svg>
+            <p class="navtitile">My Network</p>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M22.84 10.22L21 6h-3.95V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2l2.22 5.18A3 3 0 007 13h14a2 2 0 001.84-2.78zM15.05 6h-6V5a1 1 0 011-1h4a1 1 0 011 1zM7 14h15v3a3 3 0 01-3 3H5a3 3 0 01-3-3V8.54l1.3 3A4 4 0 007 14z"
+              ></path>
+            </svg>
+            <p class="navtitile">Jobs</p>
+          </li>
+
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"
+              ></path>
+            </svg>
+            <p class="navtitile">Messaging</p>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M22 19.24a3.46 3.46 0 01-.09.78l-.22 1-6.76-1.51A2.16 2.16 0 0115 20a2 2 0 11-3.53-1.28L2 16.62l.22-1A4.45 4.45 0 014 13.12l1.22-.93 15.46 3.44.7 1.36a5 5 0 01.62 2.25zm-1.49-10.4a6.29 6.29 0 00-4.92-6.69A6.76 6.76 0 0014.18 2a6.29 6.29 0 00-5.9 4.12l-2 5.27 13.8 3.08z"
+              ></path>
+            </svg>
+            <p class="navtitile">Notifications</p>
+          </li>
+          <li>
+            <img class="manid" src="./img//man.jpg" alt="img" />
+            <p class="navtitile">
+              Me
+              <span class="dropdown-icon"></span>
+            </p>
+          </li>
+        </ol>
+      </div>
+      <div class="rightnav" id="rightnav">
+        <div class="threedot"><span>...</span></div>
+        <ol>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"
+              ></path>
+            </svg>
+            <p class="navtitile">
+              For Bussiness <span class="dropdown-icon"></span>
+            </p>
+          </li>
+          <li><span>Unlock ₹1,000 in free job credits</span></li>
+        </ol>
+      </div>
+    </nav>
+
+    <div class="full-layout">
+      <div class="half-layout">
+        <div class="leftside">
+          <div class="leftside-pannel01">
+            <div class="l-pannel011">
+              <img src="./img/man.jpg" alt="" srcset="" />
+              <h3>
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                  >Akshay Kumar</a
+                >
+              </h3>
+            </div>
+            <p>Intern@Bharat</p>
+            <p>Intern|Web developer|co-coordinator</p>
+            <p>@Team Technical NITH</p>
+
+            <br />
+            <hr />
+            <br />
+            <p class="pp">Profile viewers</p>
+            <p class="pp">View all analytics</p>
+            <p class="pp ppf">
+              Strengthen your profile with an AI writing assistant Try Premium
+              for ₹0
+            </p>
+            <p class="pp pps">My items</p>
+          </div>
+          <div class="leftside-pannel02"></div>
+        </div>
+        <div class="midside">
+          <div class="midside-pannel01">
+            <div class="mp01">
+              <img src="./img//man.jpg" alt="" />
+              <input
+                type="text"
+                placeholder="Start a post, try writing with AI"
+              />
+            </div>
+            <div class="mp02">
+              <ol>
+                <li>Media</li>
+                <li>Event</li>
+                <li>Article</li>
+              </ol>
+            </div>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <div class="midside-pannel02">
+            <ol>
+              <li>
+                <img
+                  src="https://imgs.search.brave.com/mhDjHQOdiGiZFVqEoqGrag8DEP0nrPBhEmrqBXZHWAE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzY3LzIwLzc5/LzM2MF9GXzY3MjA3/OTgwXzVqTms2STNL/RmxKak9YWTczYzNG/bGZ2c3NheFk1TjUx/LmpwZw"
+                  alt=""
+                />
+              </li>
+              <li>aAll things Javascript: JS, TypeScript, NodeJS, React,</li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-three-dots"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    stroke-linecap="round"
+                    class="nc-icon-wrapper"
+                    fill="none"
+                    stroke="#222222"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M18 6L6 18"></path>
+                    <path d="M6 6l12 12"></path>
+                  </g>
+                </svg>
+              </li>
+            </ol>
+            <p>&nbsp;&nbsp;&nbsp; 7 JavaScript Concepts you can't miss 🤯</p>
+            <img
+              src="https://imgs.search.brave.com/zLtAiF_oy2J9RrXK2Uai3fIjiuHnlPFmCr3jz9tcM-A/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTg4/MTQzNTg1L3Bob3Rv/L2h0bWwtd2ViLWNv/ZGUuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPUpZV0w1a09N/X0tzVjFDVEVRT3Fn/dWE2M25mOGJlTGdy/b0FaMEliTDNlQlE9"
+            />
+            <ol>
+              <li>like 👍</li>
+              <li>comment</li>
+              <li>share</li>
+              <li>repost</li>
+            </ol>
+          </div>
+          <br />
+          <div class="midside-pannel02">
+            <ol>
+              <li>
+                <img
+                  src="https://imgs.search.brave.com/69X8Fz6oznQO8R6IBYyvHv4x992dmHPgU4iEW5miE5k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM0/NzU0MjU5Mi9waG90/by9ub2RlLWpzLWlu/c2NyaXB0aW9uLWFn/YWluc3QtbGFwdG9w/LWFuZC1jb2RlLWJh/Y2tncm91bmQuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPUo4/d3N1M3FtWkd4emFs/YXU0QTMyRFB0Q1V2/OGFTZ1VrTTBCWV9x/c1ctQUE9"
+                  alt=""
+                  srcset=""
+                />
+              </li>
+              <li>aAll things Javascript: JS, TypeScript, NodeJS, React,</li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-three-dots"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    stroke-linecap="round"
+                    class="nc-icon-wrapper"
+                    fill="none"
+                    stroke="#222222"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M18 6L6 18"></path>
+                    <path d="M6 6l12 12"></path>
+                  </g>
+                </svg>
+              </li>
+            </ol>
+            <p>&nbsp;&nbsp;&nbsp; 7 JavaScript Concepts you can't miss 🤯</p>
+            <img
+              src="https://imgs.search.brave.com/rplBvubyMeY1cwaOFjR2g9IYPXf2lLX9mjzQPOSYQfc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI4/NDI3MTg3OC9waG90/by9qYXZhc2NyaXB0/LWluc2NyaXB0aW9u/LWFnYWluc3QtbGFw/dG9wLWFuZC1jb2Rl/LWJhY2tncm91bmQt/bGVhcm4tamF2YXNj/cmlwdC1wcm9ncmFt/bWluZy53ZWJwP2I9/MSZzPTE3MDY2N2Em/dz0wJms9MjAmYz1w/Tnl3NWlOMmVlM29L/NWFkeVJCcjktdzFj/UGg5aGtVR0duYzVR/NEpmeUpNPQ"
+            />
+            <ol>
+              <li>like 👍</li>
+              <li>comment</li>
+              <li>share</li>
+              <li>repost</li>
+            </ol>
+          </div>
+          <br />
+          <div class="midside-pannel02">
+            <ol>
+              <li>
+                <img
+                  src="https://imgs.search.brave.com/mhDjHQOdiGiZFVqEoqGrag8DEP0nrPBhEmrqBXZHWAE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzY3LzIwLzc5/LzM2MF9GXzY3MjA3/OTgwXzVqTms2STNL/RmxKak9YWTczYzNG/bGZ2c3NheFk1TjUx/LmpwZw"
+                  alt=""
+                />
+              </li>
+              <li>aAll things Javascript: JS, TypeScript, NodeJS, React,</li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-three-dots"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    stroke-linecap="round"
+                    class="nc-icon-wrapper"
+                    fill="none"
+                    stroke="#222222"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M18 6L6 18"></path>
+                    <path d="M6 6l12 12"></path>
+                  </g>
+                </svg>
+              </li>
+            </ol>
+            <p>&nbsp;&nbsp;&nbsp; 7 JavaScript Concepts you can't miss 🤯</p>
+            <img
+              src="https://imgs.search.brave.com/zLtAiF_oy2J9RrXK2Uai3fIjiuHnlPFmCr3jz9tcM-A/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTg4/MTQzNTg1L3Bob3Rv/L2h0bWwtd2ViLWNv/ZGUuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPUpZV0w1a09N/X0tzVjFDVEVRT3Fn/dWE2M25mOGJlTGdy/b0FaMEliTDNlQlE9"
+            />
+            <ol>
+              <li>like 👍</li>
+              <li>comment</li>
+              <li>share</li>
+              <li>repost</li>
+            </ol>
+          </div>
+          <br />
+          <div class="midside-pannel03"></div>
+        </div>
+        <div class="rightside">
+          <div class="rightside-pannel01">
+            <h3>LinkedIn News</h3>
+            <ol>
+              <li>
+                Top companies in tech, finance, and retail
+                <p>Top news • 8,970 readers</p>
+              </li>
+              <li>
+                Skills to keep up with emerging tech
+                <p>2h ago</p>
+              </li>
+              <li>
+                Luxury homes rise in Tier 2 cities
+                <p>12h ago</p>
+              </li>
+              <li>
+                Hotels check-in to growth
+                <p>23days ago</p>
+              </li>
+              <li>
+                FMCG goes big with small
+                <p>22h ago</p>
+              </li>
+            </ol>
+          </div>
+          <div class="rightside-pannel02">
+            <ol>
+              <li>About</li>
+              <li>Accessibility</li>
+              <li>Help Center</li>
+            </ol>
+            <ol>
+              <li>Privacy & Terms</li>
+              <li>Ad Choices</li>
+              <li>Advertising</li>
+            </ol>
+
+            <ol>
+              <li>Business Services</li>
+              <li>Get the LinkedIn app</li>
+              <li>More</li>
+            </ol>
+            <ol>
+              <li>LinkedIn Corporation © 2024</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
