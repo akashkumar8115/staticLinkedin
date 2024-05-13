@@ -1,0 +1,41 @@
+.rightside-pannel01 {
+  text-align: start;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 6px;
+  background-color: white;
+  font-size: 16px;
+}
+.rightside-pannel01 h3 {
+  padding: 1rem;
+}
+
+.rightside-pannel01 ol {
+  list-style: circle;
+  padding: 1.5rem;
+  font-weight: bold;
+}
+
+.rightside-pannel01 ol li p {
+  font-size: 12px;
+  color: gray;
+}
+
+.rightside-pannel02 {
+  padding: 1rem;
+}
+.rightside-pannel02 ol {
+  list-style: none;
+  display: flex;
+  text-align: start;
+  font-size: 12px;
+  color: rgb(104, 104, 104);
+}
+
+.rightside-pannel02 ol li {
+  cursor: pointer;
+  margin: 0.2rem;
+}
+.rightside-pannel02 ol li:hover {
+  text-decoration:underline;
+  color: blue;
+}
